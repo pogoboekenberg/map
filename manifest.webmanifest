@@ -1,0 +1,16 @@
+{
+  "name": "PoGo Boekenberg",
+  "short_name": "PoGo Boekenberg",
+  "description": "Player-submitted Pokémon GO Field Research around Boekenberg.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#08151e",
+  "theme_color": "#08151e",
+  "icons": [
+    { "src": "assets/app-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/app-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
