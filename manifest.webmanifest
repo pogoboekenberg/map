@@ -1,7 +1,7 @@
 {
   "name": "PoGo Boekenberg",
   "short_name": "PoGo Boekenberg",
-  "description": "Player-submitted Pokémon GO Field Research around Boekenberg.",
+  "description": "Pokémon GO Field Research, live raids, and S2 planning around Boekenberg.",
   "id": "./",
   "start_url": "./",
   "scope": "./",
