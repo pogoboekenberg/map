@@ -7,5 +7,6 @@ window.POKEMAP_CONFIG = {
   nianticFrontendFallback: true,
   nianticGraphqlUrl: "https://niantic-social-api.nianticlabs.com/graphql",
   nianticRealityChannelId: "da83476a-c4da-4312-a610-a4f2fc2c37f0",
-  scrapedDuckResearchUrl: "https://raw.githubusercontent.com/bigfoott/ScrapedDuck/data/research.min.json"
+  scrapedDuckResearchUrl: "https://raw.githubusercontent.com/bigfoott/ScrapedDuck/data/research.min.json",
+  scrapedDuckEventsUrl: "https://raw.githubusercontent.com/bigfoott/ScrapedDuck/data/events.min.json"
 };
