@@ -247,6 +247,7 @@ dialog select:focus,dialog input:focus,dialog textarea:focus,.reward-picker-butt
 .leaflet-control-attribution{padding:2px 5px!important;background:#0d151cdb!important;color:#71838e!important;font-size:9px!important}
 .raid-details.compact-event-extras .ca-event-boss-cp li strong{flex-direction:column;align-items:flex-start;gap:4px}
 *{scrollbar-width:thin;scrollbar-color:#3a4b56 transparent}
+.calendar-options{display:grid;gap:9px;margin:18px 0 12px}.calendar-options a,.calendar-options button{display:block;width:100%;box-sizing:border-box;text-decoration:none;text-align:center}.calendar-feed-url{margin:10px 0!important;font-size:11px}.calendar-options+.calendar-feed-url+small{display:block;color:var(--muted);font-size:11px;line-height:1.45}
 ::-webkit-scrollbar{width:7px;height:7px}
 ::-webkit-scrollbar-thumb{background:#3a4b56;border-radius:8px}
 ::-webkit-scrollbar-track{background:transparent}
