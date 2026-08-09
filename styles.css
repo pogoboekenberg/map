@@ -253,5 +253,25 @@ dialog select:focus,dialog input:focus,dialog textarea:focus,.reward-picker-butt
 ::-webkit-scrollbar{width:7px;height:7px}
 ::-webkit-scrollbar-thumb{background:#3a4b56;border-radius:8px}
 ::-webkit-scrollbar-track{background:transparent}
+body:not(.nests) #reportNest{display:none!important}
+body.nests #questFilterButton,body.nests #stats{display:none!important}
+body.nest-placement #map{cursor:crosshair}
+body.nest-placement .leaflet-marker-pane{pointer-events:none}
+#reportNest.active{background:#183f32;color:#70e5a8}
+.nest-map-icon{position:relative;width:50px;height:50px;display:grid;place-items:center;border:3px solid #effff6;border-radius:50%;background:linear-gradient(145deg,#2fb875,#166747);box-shadow:0 4px 12px #0009}
+.nest-map-icon img{width:43px;height:43px;object-fit:contain;filter:drop-shadow(0 2px 2px #0008)}
+.nest-map-icon .nest-fallback{font-size:24px}
+.nest-map-icon b{position:absolute;right:-5px;bottom:-3px;min-width:20px;height:20px;padding:0 5px;display:grid;place-items:center;border:2px solid #fff;border-radius:99px;background:#15303c;color:#fff;font-size:10px;line-height:1}
+.nest-list{display:grid;gap:7px;margin:14px 0}
+.nest-candidate{display:grid;grid-template-columns:42px minmax(0,1fr) auto;align-items:center;gap:10px;padding:9px;border:1px solid #30414c;border-radius:9px;background:#0b141a}
+.nest-candidate img{width:40px;height:40px;object-fit:contain;filter:drop-shadow(0 2px 2px #0008)}
+.nest-candidate>span{display:grid;gap:3px;min-width:0}
+.nest-candidate strong{font-size:13px}
+.nest-candidate small{color:var(--muted);font-size:10px}
+.nest-candidate button{min-width:74px;padding:8px 10px;border:0;border-radius:7px;background:#183f32;color:#70e5a8;font-size:11px;font-weight:800}
+.nest-candidate button[disabled]{opacity:.65}
+.nest-reset-note{margin:8px 0 0;color:var(--muted);font-size:11px}
+#nestReportDialog label small{float:right;color:var(--muted);font-weight:500}
+@media(max-width:760px){.nest-candidate{grid-template-columns:38px minmax(0,1fr) auto}.nest-candidate img{width:36px;height:36px}}
 .raid-details .ca-event-stardust{grid-column:1/-1;padding:11px 8px;overflow-x:auto}.ca-event-stardust table{width:100%;min-width:430px;margin-top:7px;border-collapse:collapse;table-layout:fixed}.ca-event-stardust th,.ca-event-stardust td{padding:6px 4px;border-top:1px solid #293943;color:#d6e0e4;font-size:10px;text-align:right;vertical-align:middle}.ca-event-stardust thead th{border-top:0;color:#81949f;font-size:8px;font-weight:700;line-height:1.15}.ca-event-stardust th:first-child{width:31%;text-align:left}.ca-event-stardust tbody th{display:flex;align-items:center;gap:5px;color:#e9f4f2}.ca-event-stardust tbody img{width:25px;height:25px;flex:0 0 25px;object-fit:contain;filter:drop-shadow(0 2px 2px #0008)}.ca-event-stardust tbody span{overflow:hidden;text-overflow:ellipsis}.ca-event-stardust tbody td{font-variant-numeric:tabular-nums;font-weight:750}
 @media(max-width:430px){.raid-details.compact-event-extras .ca-event-boss-cp,.raid-details.compact-event-extras .ca-event-rewards{border-left:0}}
