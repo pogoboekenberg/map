@@ -69,7 +69,7 @@ header{height:64px;padding:0 18px;background:#0d151cfa;border-bottom:1px solid #
 .brand small{margin-top:4px;color:#71838e;font-size:9px;font-weight:700;letter-spacing:.14em}
 .modes{height:64px;margin:0 auto;padding:0;gap:2px;background:transparent;border:0;border-radius:0}
 .modes button{position:relative;height:64px;padding:0 18px;border:0;border-radius:0;background:transparent;color:#82949f;font-size:13px;font-weight:650}
-.modes button{display:flex;align-items:center;justify-content:center;gap:7px}.modes svg{width:16px;height:16px;fill:currentColor}.modes .mode-icon{width:22px;height:22px;object-fit:contain;filter:drop-shadow(0 1px 2px #0009)}
+.modes button{display:flex;align-items:center;justify-content:center;gap:7px}.modes svg{width:16px;height:16px;fill:currentColor}.modes .nest-mode-icon{width:22px;height:22px;overflow:visible}.modes .nest-mode-icon path:first-child{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round}.modes .nest-mode-icon path:last-child{fill:currentColor;stroke:#277944;stroke-width:1}.modes button.active .nest-mode-icon path:last-child{fill:#71dc61}.modes .mode-icon{width:22px;height:22px;object-fit:contain;filter:drop-shadow(0 1px 2px #0009)}
 .modes button:hover{background:#ffffff08;color:var(--ink)}
 .modes button.active{background:#15303c;color:#eaf8fd}
 .modes button.active:after{content:"";position:absolute;left:14px;right:14px;bottom:0;height:3px;background:var(--accent);border-radius:3px 3px 0 0}
@@ -210,7 +210,7 @@ dialog select:focus,dialog input:focus,dialog textarea:focus,.reward-picker-butt
   .progress-pill{margin-left:auto;min-width:0;padding:7px 9px;font-size:9px}
   .modes{position:fixed;z-index:1050;left:0;right:0;bottom:0;height:calc(62px + env(safe-area-inset-bottom));padding:0 6px env(safe-area-inset-bottom);gap:0;background:#0e171ef7;border-top:1px solid #2a3943;box-shadow:0 -8px 24px #0007;backdrop-filter:blur(12px)}
   .modes button{height:62px;padding:0 4px;font-size:10px}
-  .modes button{flex-direction:column;gap:4px}.modes svg{width:19px;height:19px}.modes .mode-icon{width:24px;height:24px}
+  .modes button{flex-direction:column;gap:4px}.modes svg{width:19px;height:19px}.modes .nest-mode-icon{width:24px;height:24px}.modes .mode-icon{width:24px;height:24px}
   .modes button.active{background:transparent;color:#94ddf8}
   .modes button.active:after{top:0;bottom:auto;left:24%;right:24%;height:3px;border-radius:0 0 3px 3px}
   main{height:calc(100dvh - 58px)}
