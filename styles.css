@@ -260,7 +260,7 @@ body.nest-placement .leaflet-marker-pane{pointer-events:none}
 #reportNest.active{background:#183f32;color:#70e5a8}
 .nest-map-icon{position:relative;width:50px;height:50px;display:grid;place-items:center;border:3px solid #effff6;border-radius:50%;background:linear-gradient(145deg,#2fb875,#166747);box-shadow:0 4px 12px #0009;overflow:visible}
 .nest-map-icon.candidate{width:30px;height:30px;border:2px dashed #9bb1a8;background:#263a35;box-shadow:0 2px 7px #0008;opacity:.72}.nest-map-icon.candidate .nest-fallback{font-size:15px}
-.nest-map-icon img{position:absolute;left:50%;top:50%;display:block;width:43px;height:43px;max-width:none;max-height:none;transform:translate(-50%,-50%);object-fit:contain;filter:drop-shadow(0 2px 2px #0008)}
+.nest-map-icon img{position:absolute;left:50%;top:50%;display:block;width:43px;height:43px;max-width:none;max-height:none;opacity:0;transform:translate(-50%,-50%);object-fit:contain;filter:drop-shadow(0 2px 2px #0008)}
 .nest-map-icon .nest-fallback{font-size:24px}
 .nest-map-icon b{position:absolute;right:-5px;top:-4px;min-width:20px;height:20px;padding:0 5px;display:grid;place-items:center;border:2px solid #fff;border-radius:99px;background:#15303c;color:#fff;font-size:10px;line-height:1}.nest-map-icon>.nest-days{position:absolute;left:50%;top:47px;transform:translateX(-50%);padding:2px 6px;border:1px solid #effff6;border-radius:99px;background:#166747;color:#fff;font-size:8px;font-weight:850;line-height:10px;white-space:nowrap;box-shadow:0 2px 6px #000b}
 .nest-list{display:grid;gap:7px;margin:14px 0}
