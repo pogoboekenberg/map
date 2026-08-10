@@ -20,14 +20,14 @@
   const savedView=loadSavedView();
   const latitudeSpan=GEOFENCE.radiusKm/111.32,longitudeSpan=GEOFENCE.radiusKm/(111.32*Math.cos(GEOFENCE.latitude*Math.PI/180));
   const communityBounds=L.latLngBounds([GEOFENCE.latitude-latitudeSpan,GEOFENCE.longitude-longitudeSpan],[GEOFENCE.latitude+latitudeSpan,GEOFENCE.longitude+longitudeSpan]);
-  const map=L.map("map",{zoomControl:false,minZoom:11,maxZoom:19,...(GEOFENCE.enabled?{maxBounds:communityBounds,maxBoundsViscosity:1}:{})}).setView([savedView.latitude,savedView.longitude],savedView.zoom);
+  const map=L.map("map",{zoomControl:false,minZoom:11,maxZoom:19,inertiaMaxSpeed:600,inertiaDeceleration:5000,...(GEOFENCE.enabled?{maxBounds:communityBounds,maxBoundsViscosity:1}:{})}).setView([savedView.latitude,savedView.longitude],savedView.zoom);
   map.createPane("interactionRanges");map.getPane("interactionRanges").style.zIndex="425";map.getPane("interactionRanges").style.pointerEvents="none";map.getPane("interactionRanges").classList.add("leaflet-interaction-pane");
   map.createPane("exclusionZones");map.getPane("exclusionZones").style.zIndex="440";map.getPane("exclusionZones").style.pointerEvents="none";
-  map.createPane("nestBoundaries");map.getPane("nestBoundaries").style.zIndex="410";map.getPane("nestBoundaries").style.pointerEvents="auto";
+  map.createPane("nestBoundaries");map.getPane("nestBoundaries").style.zIndex="410";map.getPane("nestBoundaries").style.pointerEvents="none";
   map.createPane("s2Labels");map.getPane("s2Labels").style.zIndex="450";
   map.createPane("eventMarkers");map.getPane("eventMarkers").style.zIndex="590";
   L.control.zoom({position:"bottomright"}).addTo(map);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,keepBuffer:3,updateWhenIdle:false,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
   if(GEOFENCE.enabled)L.circle([GEOFENCE.latitude,GEOFENCE.longitude],{radius:GEOFENCE.radiusKm*1000,color:"#52e0a4",weight:2,opacity:.75,fill:false,interactive:false}).addTo(map);
   const poiLayer=L.layerGroup(),eventLayer=L.layerGroup(),radiusLayer=L.layerGroup(),interactionLayer=L.layerGroup(),nestBoundaryLayer=L.layerGroup(),cells17=L.layerGroup(),cells14=L.layerGroup(),locationLayer=L.layerGroup(),sharedLocationLayer=L.layerGroup(),cellRenderer=L.canvas({padding:.5}),nestBoundaryRenderer=L.svg({padding:.5,pane:"nestBoundaries"}),interactionRenderer=L.canvas({padding:.5,pane:"interactionRanges"}),exclusionRenderer=L.canvas({padding:.5,pane:"exclusionZones"});let displayedRaidLayer=null;
   map.addLayer(radiusLayer);map.addLayer(cells17);map.addLayer(cells14);map.addLayer(interactionLayer);map.addLayer(nestBoundaryLayer);map.addLayer(poiLayer);map.addLayer(eventLayer);map.addLayer(sharedLocationLayer);map.addLayer(locationLayer);
