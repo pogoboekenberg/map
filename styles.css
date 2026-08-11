@@ -264,13 +264,12 @@ body.nest-placement .leaflet-marker-pane{pointer-events:none}
 .nest-creature{position:relative;width:var(--nest-creature-size);height:var(--nest-creature-size);pointer-events:none;filter:drop-shadow(0 2px 2px #0008)}.nest-creature img{position:absolute;left:50%;top:50%;display:block;width:var(--nest-creature-size);height:var(--nest-creature-size);max-width:none;max-height:none;opacity:0;transform:translate(-50%,-50%);object-fit:contain}
 .nest-map-icon b{position:absolute;right:-5px;top:-4px;min-width:20px;height:20px;padding:0 5px;display:grid;place-items:center;border:2px solid #fff;border-radius:99px;background:#15303c;color:#fff;font-size:10px;line-height:1}.nest-map-icon>.nest-days{position:absolute;left:50%;top:47px;transform:translateX(-50%);padding:2px 6px;border:1px solid #effff6;border-radius:99px;background:#166747;color:#fff;font-size:8px;font-weight:850;line-height:10px;white-space:nowrap;box-shadow:0 2px 6px #000b}
 .nest-list{display:grid;gap:7px;margin:14px 0}
-.nest-candidate{display:grid;grid-template-columns:42px minmax(0,1fr) auto;align-items:center;gap:10px;padding:9px;border:1px solid #30414c;border-radius:9px;background:#0b141a}
+.nest-candidate{display:grid;grid-template-columns:42px minmax(0,1fr) 34px;align-items:center;gap:10px;padding:9px;border:1px solid #30414c;border-radius:9px;background:#0b141a}.nest-candidate.confirmed{border-color:#36785f;background:#102a25}
 .nest-candidate img{width:40px;height:40px;object-fit:contain;filter:drop-shadow(0 2px 2px #0008)}
 .nest-candidate>span{display:grid;gap:3px;min-width:0}
 .nest-candidate strong{font-size:13px}
 .nest-candidate small{color:var(--muted);font-size:10px}
-.nest-candidate button{min-width:74px;padding:8px 10px;border:0;border-radius:7px;background:#183f32;color:#70e5a8;font-size:11px;font-weight:800}
-.nest-candidate button[disabled]{opacity:.65}
+.nest-candidate .nest-confirm{width:34px;height:34px;min-width:34px;display:grid;place-items:center;padding:0;border:1px solid #435560;border-radius:50%;background:transparent;color:#7f929d;font-size:17px;font-weight:900;line-height:1}.nest-candidate .nest-confirm:hover{border-color:var(--mint);background:#173329;color:var(--mint)}.nest-candidate.confirmed .nest-confirm{border-color:var(--mint);background:var(--mint);color:#062018}.nest-candidate .nest-confirm[disabled]{opacity:.72;cursor:default}
 .nest-reset-note{margin:8px 0 0;color:var(--muted);font-size:11px}
 #nestReportDialog label small{float:right;color:var(--muted);font-weight:500}
 @media(max-width:760px){.nest-candidate{grid-template-columns:38px minmax(0,1fr) auto}.nest-candidate img{width:36px;height:36px}}
