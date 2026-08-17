@@ -126,6 +126,7 @@ footer button{color:var(--accent);font-weight:700}
 .sheet-actions button:hover,.sheet-actions a:hover,.secondary:hover{border-color:#4a606d;background:#1d2c36}
 .sheet-actions .primary,.primary{border-color:#48bce5;background:#43bff2;color:#07171e}
 .sheet-actions .primary:hover,.primary:hover{background:#69cef4}
+.sheet-actions .admin-danger{border-color:#8f3f46;background:#46252a;color:#ffd7d9}.sheet-actions .admin-danger:hover{border-color:#c85a63;background:#5c2c32}
 .sheet-actions .icon-action{flex-basis:42px;width:42px;border-color:#318db0;background:#173a48}
 .sheet-actions .icon-action:hover{border-color:#4fc6f2;background:#1c4a5c}
 .quest{position:relative;margin:0;padding:14px 48px 14px 0;border:0;border-bottom:1px solid #293842;border-radius:0;background:transparent}
