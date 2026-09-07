@@ -231,7 +231,7 @@ dialog select:focus,dialog input:focus,dialog textarea:focus,.reward-picker-butt
   .sheet h2{font-size:19px}
   .warning{top:58px;width:calc(100% - 20px)}
   .location-unsupported #warning:not(.hidden){top:102px}
-  .leaflet-control-zoom{margin-top:60px!important}
+  .leaflet-control-zoom{margin-top:76px!important}
   dialog{width:calc(100% - 16px);max-height:calc(100dvh - 16px);border-radius:12px}
   dialog form{padding:21px 18px}
   .dialog-actions{position:sticky;bottom:-21px;z-index:5;margin:16px -2px -2px;padding:12px 2px 2px;background:linear-gradient(transparent,#111a22 22%)}
