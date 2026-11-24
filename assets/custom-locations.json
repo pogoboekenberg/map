@@ -57,6 +57,33 @@
         "raids",
         "nests"
       ]
+    },
+    {
+      "id": "cafe-josee-toilet",
+      "enabled": true,
+      "category": "Toilet",
+      "name": "Café Josee",
+      "latitude": 51.19852057276853,
+      "longitude": 4.452952358294276,
+      "icon": {
+        "emoji": "🚻",
+        "image": "",
+        "color": "#38bdf8"
+      },
+      "description": "Gratis toilet.",
+      "details": [
+        {
+          "label": "Van het café",
+          "value": "Pak gerust iets mee voor onderweg!"
+        }
+      ],
+      "website": "",
+      "minZoom": 15,
+      "modes": [
+        "research",
+        "raids",
+        "nests"
+      ]
     }
   ]
 }
