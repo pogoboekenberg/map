@@ -30,5 +30,33 @@
       "nests"
     ]
   },
-  "locations": []
+  "locations": [
+    {
+      "id": "cuperus-bar-boulaar-toilet",
+      "enabled": true,
+      "category": "Toilet",
+      "name": "Cuperus Bar Boulaar – Koffiebar",
+      "latitude": 51.20153207387293,
+      "longitude": 4.449865789813449,
+      "icon": {
+        "emoji": "🚻",
+        "image": "",
+        "color": "#38bdf8"
+      },
+      "description": "Gratis toilet bij de koffiebar.",
+      "details": [
+        {
+          "label": "Bijdrage",
+          "value": "Donaties mogen in de drinkgeldpot"
+        }
+      ],
+      "website": "",
+      "minZoom": 15,
+      "modes": [
+        "research",
+        "raids",
+        "nests"
+      ]
+    }
+  ]
 }
