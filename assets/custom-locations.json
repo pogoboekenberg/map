@@ -48,9 +48,17 @@
         {
           "label": "Bijdrage",
           "value": "Donaties mogen in de drinkgeldpot"
+        },
+        {
+          "label": "Ma–vr",
+          "value": "08:00–17:00"
+        },
+        {
+          "label": "Za–zo & feestdagen",
+          "value": "09:30–17:00"
         }
       ],
-      "website": "",
+      "website": "https://www.cuperuskoffie.be/over-ons/onze-locaties/koffiebars/",
       "minZoom": 15,
       "modes": [
         "research",
@@ -75,6 +83,18 @@
         {
           "label": "Van het café",
           "value": "Pak gerust iets mee voor onderweg!"
+        },
+        {
+          "label": "Ma–wo & vr",
+          "value": "08:45–16:30"
+        },
+        {
+          "label": "Donderdag",
+          "value": "Gesloten"
+        },
+        {
+          "label": "Za–zo",
+          "value": "10:00–16:30"
         }
       ],
       "website": "",
@@ -102,9 +122,21 @@
         {
           "label": "Kostprijs",
           "value": "€0,50 of iets drinken"
+        },
+        {
+          "label": "Ma–vr",
+          "value": "13:00–22:00"
+        },
+        {
+          "label": "Zaterdag",
+          "value": "09:00–22:00"
+        },
+        {
+          "label": "Zondag",
+          "value": "09:00–20:00"
         }
       ],
-      "website": "",
+      "website": "https://www.facebook.com/Brasserie.Den.DT/",
       "minZoom": 15,
       "modes": [
         "research",
