@@ -84,6 +84,33 @@
         "raids",
         "nests"
       ]
+    },
+    {
+      "id": "brasserie-den-dt-toilet",
+      "enabled": true,
+      "category": "Toilet",
+      "name": "Brasserie Den DT",
+      "latitude": 51.1940244338184,
+      "longitude": 4.462214458593389,
+      "icon": {
+        "emoji": "🚻",
+        "image": "",
+        "color": "#38bdf8"
+      },
+      "description": "Toilet beschikbaar bij de brasserie.",
+      "details": [
+        {
+          "label": "Kostprijs",
+          "value": "€0,50 of iets drinken"
+        }
+      ],
+      "website": "",
+      "minZoom": 15,
+      "modes": [
+        "research",
+        "raids",
+        "nests"
+      ]
     }
   ]
 }
